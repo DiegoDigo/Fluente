@@ -12,6 +12,8 @@ public class Contract extends Notifiable {
         return this;
     }
 
+    /* String validation */
+
     public Contract isNotNullOrEmpty(String value, String property, String message) {
         if (StringUtils.isEmpty(value)) {
             addNotification(property, message);
@@ -105,6 +107,55 @@ public class Contract extends Notifiable {
         if (!matcher.find()) {
             addNotification(property, message);
         }
+
+        return this;
+    }
+
+    /* Boolean validation */
+
+    public Contract isFalse(boolean value, String property, String message) {
+        if(value){
+            addNotification(property, message);
+        }
+        return  this;
+    }
+
+
+    public Contract isTrue(boolean value, String property, String message) {
+        if(!value){
+            addNotification(property, message);
+        }
+        return  this;
+    }
+
+    /* Object validation */
+
+    public Contract isNull(Object object, String property, String message) {
+        if(object != null){
+            addNotification(property, message);
+        }
+        return  this;
+    }
+
+    public Contract isNotNull(Object object, String property, String message) {
+        if(object == null){
+            addNotification(property, message);
+        }
+        return  this;
+    }
+
+    public Contract areEquals(Object obj, Object comparer, String property, String message)
+    {
+        if (!obj.equals(comparer))
+            addNotification(property, message);
+
+        return this;
+    }
+
+    public Contract areNotEquals(Object obj, Object comparer, String property, String  message)
+    {
+        if (obj.equals(comparer))
+            addNotification(property, message);
 
         return this;
     }
