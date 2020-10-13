@@ -3,6 +3,7 @@ package validation;
 import notification.Notifiable;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -36,7 +37,7 @@ public class Contract extends Notifiable {
     }
 
     public Contract hasMinLen(String value, int min, String property, String message) {
-        if (StringUtils.isEmpty(value) ||  value.length() < min) {
+        if (StringUtils.isEmpty(value) || value.length() < min) {
             addNotification(property, message);
         }
 
@@ -114,50 +115,92 @@ public class Contract extends Notifiable {
     /* Boolean validation */
 
     public Contract isFalse(boolean value, String property, String message) {
-        if(value){
+        if (value) {
             addNotification(property, message);
         }
-        return  this;
+        return this;
     }
 
 
     public Contract isTrue(boolean value, String property, String message) {
-        if(!value){
+        if (!value) {
             addNotification(property, message);
         }
-        return  this;
+        return this;
     }
 
     /* Object validation */
 
     public Contract isNull(Object object, String property, String message) {
-        if(object != null){
+        if (object != null) {
             addNotification(property, message);
         }
-        return  this;
+        return this;
     }
 
     public Contract isNotNull(Object object, String property, String message) {
-        if(object == null){
+        if (object == null) {
             addNotification(property, message);
         }
-        return  this;
+        return this;
     }
 
-    public Contract areEquals(Object obj, Object comparer, String property, String message)
-    {
+    public Contract areEquals(Object obj, Object comparer, String property, String message) {
         if (!obj.equals(comparer))
             addNotification(property, message);
 
         return this;
     }
 
-    public Contract areNotEquals(Object obj, Object comparer, String property, String  message)
-    {
+    public Contract areNotEquals(Object obj, Object comparer, String property, String message) {
         if (obj.equals(comparer))
             addNotification(property, message);
 
         return this;
     }
 
+    /* Date  validation */
+
+    public Contract isGreaterThan(Date val, Date comparer, String property, String message) {
+        if (val.before(comparer))
+            addNotification(property, message);
+
+        return this;
+    }
+
+    public Contract isGreaterOrEqualsThan(Date val, Date comparer, String property, String message) {
+        if (val.before(comparer) || val.equals(comparer))
+            addNotification(property, message);
+
+        return this;
+    }
+
+    public Contract isLowerThan(Date val, Date comparer, String property, String message) {
+        if (val.after(comparer))
+            addNotification(property, message);
+
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Date val, Date comparer, String property, String message) {
+        if (val.after(comparer) || val.equals(comparer))
+            addNotification(property, message);
+
+        return this;
+    }
+
+    public Contract isBetween(Date val, Date from, Date to, String property, String message) {
+        if (!(val.before(to) && val.after(from))) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNullOrNullable(Date val, String property, String message)
+    {
+        if (val == null)
+            addNotification(property, message);
+
+        return this;
+    }
 }
