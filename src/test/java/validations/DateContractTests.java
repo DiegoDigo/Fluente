@@ -99,7 +99,7 @@ public class DateContractTests {
     public void isNullOrNullable() {
         Contract date = new Contract()
                 .required()
-                .isNullOrNullable(null, "string", "string is null");
+                .isNullOrNullable((Date) null, "string", "string is null");
 
         Assertions.assertTrue(date.inValid());
         Assertions.assertEquals(1, date.getNotifications().size());
