@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.diego</groupId>
-    <artifactId>Fluente</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>fluente</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>GitHub DiegoDigo Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/DiegoDigo/Fluente</url>
+            <url>https://maven.pkg.github.com/DiegoDigo/fluente</url>
         </repository>
     </distributionManagement>
 

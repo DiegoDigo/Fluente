@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="validations.StringContractTests" time="0.006" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="validations.StringContractTests" time="0.016" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
-    <property name="sun.java.command" value="C:\Users\di3g0\AppData\Local\Temp\surefire13322721365670044792\surefirebooter5241646904822442216.jar C:\Users\di3g0\AppData\Local\Temp\surefire13322721365670044792 2020-10-17T12-01-36_542-jvmRun1 surefire14952245352008323786tmp surefire_02236318445620549693tmp"/>
+    <property name="sun.java.command" value="C:\Users\di3g0\AppData\Local\Temp\surefire13106684218253553252\surefirebooter16516285485791306578.jar C:\Users\di3g0\AppData\Local\Temp\surefire13106684218253553252 2020-10-17T13-38-18_751-jvmRun1 surefire17384754966902643890tmp surefire_09565287361376370849tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\dev\java\Fluente\target\test-classes;C:\dev\java\Fluente\target\classes;C:\Users\di3g0\.m2\repository\org\projectlombok\lombok\1.18.14\lombok-1.18.14.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.1\junit-jupiter-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.1\junit-jupiter-api-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\di3g0\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\di3g0\.m2\repository\org\junit\platform\junit-platform-commons\1.6.1\junit-platform-commons-1.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.1\junit-jupiter-params-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.1\junit-jupiter-engine-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\platform\junit-platform-engine\1.6.1\junit-platform-engine-1.6.1.jar;C:\Users\di3g0\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\di3g0\AppData\Local\Temp\surefire13322721365670044792\surefirebooter5241646904822442216.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\di3g0\AppData\Local\Temp\surefire13106684218253553252\surefirebooter16516285485791306578.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.8+10-LTS"/>
@@ -54,7 +54,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%JAVA_HOME%\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\di3g0\AppData\Local\Microsoft\WindowsApps;;C:\Users\di3g0\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\di3g0\.dotnet\tools;C:\Users\di3g0\AppData\Roaming\npm;C:\Users\di3g0\AppData\Local\Yarn\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%JAVA_HOME%\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;%MAVEN_HOME%\bin;C:\Users\di3g0\AppData\Local\Microsoft\WindowsApps;;C:\Users\di3g0\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\di3g0\.dotnet\tools;C:\Users\di3g0\AppData\Roaming\npm;C:\Users\di3g0\AppData\Local\Yarn\bin;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
@@ -62,14 +62,14 @@
     <property name="java.class.version" value="55.0"/>
   </properties>
   <testcase name="isEmailOrEmpty" classname="validations.StringContractTests" time="0"/>
-  <testcase name="isNotNullOrWhiteSpace" classname="validations.StringContractTests" time="0.002"/>
+  <testcase name="isNotNullOrWhiteSpace" classname="validations.StringContractTests" time="0.016"/>
   <testcase name="hasLen" classname="validations.StringContractTests" time="0"/>
   <testcase name="isNullOrEmpty" classname="validations.StringContractTests" time="0"/>
   <testcase name="contains" classname="validations.StringContractTests" time="0"/>
   <testcase name="hasMaxLen" classname="validations.StringContractTests" time="0"/>
   <testcase name="hasMinLen" classname="validations.StringContractTests" time="0"/>
   <testcase name="isUrl" classname="validations.StringContractTests" time="0"/>
-  <testcase name="isNotNullOrEmpty" classname="validations.StringContractTests" time="0.001"/>
+  <testcase name="isNotNullOrEmpty" classname="validations.StringContractTests" time="0"/>
   <testcase name="isUrlOrEmpty" classname="validations.StringContractTests" time="0"/>
   <testcase name="isDigit" classname="validations.StringContractTests" time="0"/>
   <testcase name="isEmail" classname="validations.StringContractTests" time="0"/>

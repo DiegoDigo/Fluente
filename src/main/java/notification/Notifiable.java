@@ -19,6 +19,10 @@ public abstract class Notifiable {
         notifications.add(notification);
     }
 
+    public void addNotifications(Notifiable item) {
+        notifications.addAll(item.notifications);
+    }
+
     public void addNotifications(List<Notification> allNotification) {
         notifications.addAll(allNotification);
     }

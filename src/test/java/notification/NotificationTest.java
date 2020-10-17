@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import validation.Contract;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -57,4 +58,17 @@ public class NotificationTest extends Notifiable {
         Assertions.assertTrue(inValid());
         Assertions.assertEquals(2, getNotifications().size());
     }
+
+    @Test
+    public void adicionandoNotificacoes() {
+        addNotifications(
+                new Contract()
+                        .required()
+                        .isEmail("teste@.com", "email", "teste")
+                        .isNotNullOrEmpty("", "nome", "teste")
+        );
+        Assertions.assertTrue(inValid());
+        Assertions.assertEquals(2, getNotifications().size());
+    }
+
 }
