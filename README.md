@@ -1,12 +1,12 @@
 # Fluente
-Fluente is a fluent way to use Notification Pattern with your entities.
+Fluente é uma maneira fluente de usar o Padrão de Notificação com suas entidades.
 
-Java implementation of Domain Notification Pattern based in [Flunt](https://github.com/andrebaltieri/flunt)(.NET) developed by @andrebaltieri
+Implementação Java do Domain Notification Pattern baseado em [Flunt] (https://github.com/andrebaltieri/flunt) (.NET) desenvolvido por @andrebaltieri
 
-## Dependencies
+## Dependencia
 Java 8+
 
-## Instalation
+## Instalação
 **Maven**
 ```
 <dependency>
@@ -16,6 +16,8 @@ Java 8+
 </dependency>
 ```
 
-# How to Use
-Just check our Wiki
+# Como usar
+Para saber mais acessa a [wiki](https://github.com/DiegoDigo/Fluente/wiki)
+
+
 
