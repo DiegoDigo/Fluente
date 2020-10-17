@@ -424,7 +424,7 @@ public class LongContractTests {
     public void isNullOrNullable() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNullOrNullable((Integer) null, "string", "string is null");
+                .isNullOrNullable((Long) null, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());

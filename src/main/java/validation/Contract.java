@@ -5,6 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -1450,6 +1451,36 @@ public class Contract extends Notifiable {
 
     public Contract isNullOrNullable(Long val, String property, String message) {
         if (val == null) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    /* UUID Validation */
+
+    public Contract areEquals(UUID val, UUID comparer, String property, String message) {
+        if (!val.toString().equals(comparer.toString())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract areNotEquals(UUID val, UUID comparer, String property, String message) {
+        if (val.toString().equals(comparer.toString())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEmpty(UUID val, String property, String message) {
+        if (val == null) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEmpty(UUID val, String property, String message) {
+        if (val != null) {
             addNotification(property, message);
         }
         return this;
