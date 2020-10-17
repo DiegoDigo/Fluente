@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: validations.LongContractTests
 -------------------------------------------------------------------------------
-Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in validations.LongContractTests
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in validations.LongContractTests
