@@ -717,4 +717,498 @@ public class Contract extends Notifiable {
         }
         return this;
     }
+
+    /* Float Validation */
+
+    public Contract isGreaterThan(BigDecimal val, Float comparer, String property, String message) {
+        if (val.floatValue() < comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isGreaterThan(Double val, Float comparer, String property, String message) {
+        if (val < comparer.doubleValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterThan(Float val, Float comparer, String property, String message) {
+        if (val < comparer) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterThan(Long val, Float comparer, String property, String message) {
+        if (val < comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterThan(Integer val, Float comparer, String property, String message) {
+        if (val < comparer.intValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isGreaterOrEqualsThan(BigDecimal val, Float comparer, String property, String message) {
+        if (val.floatValue() <= comparer) {
+            addNotification(property, message);
+        }
+
+
+        return this;
+
+    }
+
+    public Contract isGreaterOrEqualsThan(Double val, Float comparer, String property, String message) {
+        if (val <= comparer.doubleValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isGreaterOrEqualsThan(Float val, Float comparer, String property, String message) {
+        if (val <= comparer) {
+            addNotification(property, message);
+        }
+
+
+        return this;
+
+    }
+
+    public Contract isGreaterOrEqualsThan(Long val, Float comparer, String property, String message) {
+        if (val <= comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterOrEqualsThan(Integer val, Float comparer, String property, String message) {
+        if (val <= comparer.intValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isLowerThan(BigDecimal val, Float comparer, String property, String message) {
+        if (val.floatValue() > comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerThan(Double val, Float comparer, String property, String message) {
+        if (val > comparer.doubleValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerThan(Float val, Float comparer, String property, String message) {
+        if (val > comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerThan(Long val, Float comparer, String property, String message) {
+        if (val > comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+    }
+
+    public Contract isLowerThan(Integer val, Float comparer, String property, String message) {
+        if (val > comparer.intValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isLowerOrEqualsThan(BigDecimal val, Float comparer, String property, String message) {
+        if (val.floatValue() >= comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Double val, Float comparer, String property, String message) {
+        if (val >= comparer.doubleValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Float val, Float comparer, String property, String message) {
+        if (val >= comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Long val, Float comparer, String property, String message) {
+        if (val >= comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Integer val, Float comparer, String property, String message) {
+        if (val >= comparer.intValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isEquals(BigDecimal val, Float comparer, String property, String message) {
+        if (comparer.equals(val.floatValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEquals(Double val, Float comparer, String property, String message) {
+        if (val.equals(comparer.doubleValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEquals(Float val, Float comparer, String property, String message) {
+        if (val.equals(comparer)) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEquals(Long val, Float comparer, String property, String message) {
+        if (val.equals(comparer.longValue())) {
+            addNotification(property, message);
+        }
+
+        return this;
+    }
+
+    public Contract isEquals(Integer val, Float comparer, String property, String message) {
+        if (val.equals(comparer.intValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isNotEquals(BigDecimal val, Float comparer, String property, String message) {
+        if (!comparer.equals(val.floatValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Double val, Float comparer, String property, String message) {
+        if (!val.equals(comparer.doubleValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Float val, Float comparer, String property, String message) {
+        if (!comparer.equals(val)) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Long val, Float comparer, String property, String message) {
+        if (!val.equals(comparer.longValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Integer val, Float comparer, String property, String message) {
+        if (!val.equals(comparer.intValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isBetween(Float val, Float from, Float to, String property, String message) {
+        if (!(val.compareTo(from) > 0 && val.compareTo(to) < 0)) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNullOrNullable(Float val, String property, String message) {
+        if (val == null) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    /* Integer Validation */
+
+    public Contract isGreaterThan(BigDecimal val, Integer comparer, String property, String message) {
+        if (val.intValue() < comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isGreaterThan(Double val, Integer comparer, String property, String message) {
+        if (val.intValue() < comparer) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterThan(Float val, Integer comparer, String property, String message) {
+        if (val.intValue() < comparer) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterThan(Long val, Integer comparer, String property, String message) {
+        if (val < comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterThan(Integer val, Integer comparer, String property, String message) {
+        if (val < comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isGreaterOrEqualsThan(BigDecimal val, Integer comparer, String property, String message) {
+        if (val.intValue() <= comparer) {
+            addNotification(property, message);
+        }
+
+
+        return this;
+
+    }
+
+    public Contract isGreaterOrEqualsThan(Double val, Integer comparer, String property, String message) {
+        if (val.intValue() <= comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isGreaterOrEqualsThan(Float val, Integer comparer, String property, String message) {
+        if (val.intValue() <= comparer) {
+            addNotification(property, message);
+        }
+
+
+        return this;
+
+    }
+
+    public Contract isGreaterOrEqualsThan(Long val, Integer comparer, String property, String message) {
+        if (val.intValue() <= comparer) {
+            addNotification(property, message);
+        }
+
+        return this;
+
+    }
+
+    public Contract isGreaterOrEqualsThan(Integer val, Integer comparer, String property, String message) {
+        if (val <= comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isLowerThan(BigDecimal val, Integer comparer, String property, String message) {
+        if (val.intValue() > comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerThan(Double val, Integer comparer, String property, String message) {
+        if (val.intValue() > comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerThan(Float val, Integer comparer, String property, String message) {
+        if (val.intValue() > comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerThan(Long val, Integer comparer, String property, String message) {
+        if (val > comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+    }
+
+    public Contract isLowerThan(Integer val, Integer comparer, String property, String message) {
+        if (val > comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isLowerOrEqualsThan(BigDecimal val, Integer comparer, String property, String message) {
+        if (val.intValue() >= comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Double val, Integer comparer, String property, String message) {
+        if (val >= comparer.doubleValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Float val, Integer comparer, String property, String message) {
+        if (val.intValue() >= comparer) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Long val, Integer comparer, String property, String message) {
+        if (val >= comparer.longValue()) {
+            addNotification(property, message);
+        }
+
+        return this;
+    }
+
+    public Contract isLowerOrEqualsThan(Integer val, Integer comparer, String property, String message) {
+        if (val >= comparer.intValue()) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isEquals(BigDecimal val, Integer comparer, String property, String message) {
+        if (comparer.equals(val.intValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEquals(Double val, Integer comparer, String property, String message) {
+        if (val.equals(comparer.doubleValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEquals(Float val, Integer comparer, String property, String message) {
+        if (val.equals(comparer.floatValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isEquals(Long val, Integer comparer, String property, String message) {
+        if (val.equals(comparer.longValue())) {
+            addNotification(property, message);
+        }
+
+        return this;
+    }
+
+    public Contract isEquals(Integer val, Integer comparer, String property, String message) {
+        if (val.equals(comparer)) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+
+    public Contract isNotEquals(BigDecimal val, Integer comparer, String property, String message) {
+        if (!comparer.equals(val.intValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Double val, Integer comparer, String property, String message) {
+        if (!val.equals(comparer.doubleValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Float val, Integer comparer, String property, String message) {
+        if (!comparer.equals(val.intValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Long val, Integer comparer, String property, String message) {
+        if (!val.equals(comparer.longValue())) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNotEquals(Integer val, Integer comparer, String property, String message) {
+        if (!val.equals(comparer)) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isBetween(Integer val, Integer from, Integer to, String property, String message) {
+        if (!(val.compareTo(from) > 0 && val.compareTo(to) < 0)) {
+            addNotification(property, message);
+        }
+        return this;
+    }
+
+    public Contract isNullOrNullable(Integer val, String property, String message) {
+        if (val == null) {
+            addNotification(property, message);
+        }
+        return this;
+    }
 }

@@ -1,6 +1,8 @@
 validations\ObjectContractTests.class
 validations\DateContractTests.class
-validations\DecimalContractTests.class
+validations\FloatContractTests.class
 validations\StringContractTests.class
-validations\BooleanContractTests.class
 notification\NotificationTest.class
+validations\DoubleContractTests.class
+validations\DecimalContractTests.class
+validations\BooleanContractTests.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="notification.NotificationTest" time="0.071" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="validations.FloatContractTests" time="0.08" tests="47" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,8 +61,51 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="validandoListaSemNotificacoes" classname="notification.NotificationTest" time="0.051"/>
-  <testcase name="adicionandoNotificacaoPorPropredade" classname="notification.NotificationTest" time="0"/>
-  <testcase name="adicionandoNotificacoesPelaClasseNotification" classname="notification.NotificationTest" time="0.003"/>
-  <testcase name="adicionandoNotificacaoPelaClasseNotification" classname="notification.NotificationTest" time="0.003"/>
+  <testcase name="isLowerOrEqualsThan_float{Float}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerOrEqualsThan_float{Float}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerThan_double{double}[1]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerThan_double{double}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterThan_long" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isEquals_float" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isNotEquals_float" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isNotEquals_double" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerOrEqualsThan_int" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerOrEqualsThan_int{int}[1]" classname="validations.FloatContractTests" time="0.003"/>
+  <testcase name="isLowerOrEqualsThan_int{int}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerOrEqualsThan{Double}[1]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerOrEqualsThan{Double}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isNullOrNullable" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterOrEqualsThan_double{double}[1]" classname="validations.FloatContractTests" time="0.003"/>
+  <testcase name="isGreaterOrEqualsThan_double{double}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isNotEquals_Long" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isBetween" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerOrEqualsThan_Long{long}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerOrEqualsThan_Long{long}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isEquals" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterThan" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isGreaterOrEqualsThan_int{int}[1]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isGreaterOrEqualsThan_int{int}[2]" classname="validations.FloatContractTests" time="0.002"/>
+  <testcase name="isGreaterOrEqualsThan_long{long}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterOrEqualsThan_long{long}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isGreaterThan_double" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerOrEqualsThan_double{Double}[1]" classname="validations.FloatContractTests" time="0.002"/>
+  <testcase name="isLowerOrEqualsThan_double{Double}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterThan_int" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterOrEqualsThan_float{float}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isGreaterOrEqualsThan_float{float}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isGreaterThan_float" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerThan_Long{long}[1]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerThan_Long{long}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isEquals_double" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerThan{double}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerThan{double}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isLowerThan_int{int}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerThan_int{int}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isNotEquals_int" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isGreaterOrEqualsThan{double}[1]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isGreaterOrEqualsThan{double}[2]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerThan_float{float}[1]" classname="validations.FloatContractTests" time="0"/>
+  <testcase name="isLowerThan_float{float}[2]" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isEquals_Long" classname="validations.FloatContractTests" time="0.001"/>
+  <testcase name="isNotEquals" classname="validations.FloatContractTests" time="0"/>
 </testsuite>

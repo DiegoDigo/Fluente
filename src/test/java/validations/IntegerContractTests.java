@@ -9,14 +9,14 @@ import validation.Contract;
 
 import java.math.BigDecimal;
 
-public class DoubleContractTests {
+public class IntegerContractTests {
 
     @Test
     @DisplayName("Testa se o valor e maior q o outro ")
     public void isGreaterThan() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterThan(BigDecimal.ZERO, 10.0, "string", "string is null");
+                .isGreaterThan(BigDecimal.ZERO, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -27,7 +27,7 @@ public class DoubleContractTests {
     public void isGreaterThan_double() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterThan(0.0, 10.0, "string", "string is null");
+                .isGreaterThan(0.0, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -38,7 +38,7 @@ public class DoubleContractTests {
     public void isGreaterThan_float() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterThan(0f, 10.0, "string", "string is null");
+                .isGreaterThan(0f, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -49,7 +49,7 @@ public class DoubleContractTests {
     public void isGreaterThan_long() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterThan(0L, 10.0, "string", "string is null");
+                .isGreaterThan(0L, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -61,7 +61,7 @@ public class DoubleContractTests {
     public void isGreaterThan_int() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterThan(0, 10.0, "string", "string is null");
+                .isGreaterThan(0, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -76,7 +76,7 @@ public class DoubleContractTests {
     public void isGreaterOrEqualsThan(final double entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterOrEqualsThan(new BigDecimal(entry), 10.0, "string", "string is null");
+                .isGreaterOrEqualsThan(new BigDecimal(entry), 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -91,7 +91,7 @@ public class DoubleContractTests {
     public void isGreaterOrEqualsThan_double(final double entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterOrEqualsThan(entry, 10.0, "string", "string is null");
+                .isGreaterOrEqualsThan(entry, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -106,7 +106,7 @@ public class DoubleContractTests {
     public void isGreaterOrEqualsThan_float(final float entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterOrEqualsThan(entry, 10.0, "string", "string is null");
+                .isGreaterOrEqualsThan(entry, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -121,7 +121,7 @@ public class DoubleContractTests {
     public void isGreaterOrEqualsThan_long(final long entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterOrEqualsThan(entry, 10.0, "string", "string is null");
+                .isGreaterOrEqualsThan(entry, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -137,7 +137,7 @@ public class DoubleContractTests {
     public void isGreaterOrEqualsThan_int(final int entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isGreaterOrEqualsThan(entry, 10.0, "string", "string is null");
+                .isGreaterOrEqualsThan(entry, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -152,7 +152,7 @@ public class DoubleContractTests {
     public void isLowerThan(final double entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerThan(new BigDecimal(entry), 0.0, "string", "string is null");
+                .isLowerThan(new BigDecimal(entry), 0, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -167,7 +167,7 @@ public class DoubleContractTests {
     public void isLowerThan_double(final double entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerThan(entry, 0.0, "string", "string is null");
+                .isLowerThan(entry, 0, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -182,7 +182,7 @@ public class DoubleContractTests {
     public void isLowerThan_float(final float entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerThan(entry, 0.0, "string", "string is null");
+                .isLowerThan(entry, 0, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -197,7 +197,7 @@ public class DoubleContractTests {
     public void isLowerThan_Long(final long entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerThan(entry, 0.0, "string", "string is null");
+                .isLowerThan(entry, 0, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -212,7 +212,7 @@ public class DoubleContractTests {
     public void isLowerThan_int(final int entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerThan(entry, 0.0, "string", "string is null");
+                .isLowerThan(entry, 0, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -228,7 +228,7 @@ public class DoubleContractTests {
     public void isLowerOrEqualsThan(final Double enrty) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerOrEqualsThan(new BigDecimal(enrty), 1.0, "string", "string is null");
+                .isLowerOrEqualsThan(new BigDecimal(enrty), 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -243,7 +243,7 @@ public class DoubleContractTests {
     public void isLowerOrEqualsThan_double(final Double entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerOrEqualsThan(entry, 1.0, "string", "string is null");
+                .isLowerOrEqualsThan(entry, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -259,7 +259,7 @@ public class DoubleContractTests {
     public void isLowerOrEqualsThan_float(final Float entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerOrEqualsThan(entry, 1.0, "string", "string is null");
+                .isLowerOrEqualsThan(entry, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -274,7 +274,7 @@ public class DoubleContractTests {
     public void isLowerOrEqualsThan_Long(final long entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerOrEqualsThan(entry, 1.0, "string", "string is null");
+                .isLowerOrEqualsThan(entry, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -289,7 +289,7 @@ public class DoubleContractTests {
     public void isLowerOrEqualsThan_int(final int entry) {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isLowerOrEqualsThan(entry, 1.0, "string", "string is null");
+                .isLowerOrEqualsThan(entry, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -301,7 +301,7 @@ public class DoubleContractTests {
     public void isEquals() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isEquals(BigDecimal.ONE, 1.0, "string", "string is null");
+                .isEquals(BigDecimal.ONE, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -312,7 +312,7 @@ public class DoubleContractTests {
     public void isEquals_double() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isEquals(1.0, 1.0, "string", "string is null");
+                .isEquals(1.0, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -324,7 +324,7 @@ public class DoubleContractTests {
     public void isEquals_float() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isEquals(1F, 1.0, "string", "string is null");
+                .isEquals(1F, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -335,7 +335,7 @@ public class DoubleContractTests {
     public void isEquals_Long() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isEquals(1L, 1.0, "string", "string is null");
+                .isEquals(1L, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -346,7 +346,7 @@ public class DoubleContractTests {
     public void isLowerOrEqualsThan_int() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isEquals(1, 1.0, "string", "string is null");
+                .isEquals(1, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -357,7 +357,7 @@ public class DoubleContractTests {
     public void isNotEquals() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNotEquals(BigDecimal.TEN, 1.0, "string", "string is null");
+                .isNotEquals(BigDecimal.TEN, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -368,7 +368,7 @@ public class DoubleContractTests {
     public void isNotEquals_double() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNotEquals(10.0, 1.0, "string", "string is null");
+                .isNotEquals(10.0, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -380,7 +380,7 @@ public class DoubleContractTests {
     public void isNotEquals_float() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNotEquals(10F, 1.0, "string", "string is null");
+                .isNotEquals(10F, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -391,7 +391,7 @@ public class DoubleContractTests {
     public void isNotEquals_Long() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNotEquals(10L, 1.0, "string", "string is null");
+                .isNotEquals(10L, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -402,7 +402,7 @@ public class DoubleContractTests {
     public void isNotEquals_int() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNotEquals(10, 1.0, "string", "string is null");
+                .isNotEquals(10, 1, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -413,7 +413,7 @@ public class DoubleContractTests {
     public void isBetween() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isBetween(10.0, 0.0, 10.0, "string", "string is null");
+                .isBetween(10, 0, 10, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -424,7 +424,7 @@ public class DoubleContractTests {
     public void isNullOrNullable() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNullOrNullable((Double) null, "string", "string is null");
+                .isNullOrNullable((Integer) null, "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
