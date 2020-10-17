@@ -2,7 +2,10 @@ C:\dev\java\Fluente\src\test\java\validations\DoubleContractTests.java
 C:\dev\java\Fluente\src\test\java\validations\BooleanContractTests.java
 C:\dev\java\Fluente\src\test\java\validations\ObjectContractTests.java
 C:\dev\java\Fluente\src\test\java\notification\NotificationTest.java
+C:\dev\java\Fluente\src\test\java\validations\IntegerContractTests.java
 C:\dev\java\Fluente\src\test\java\validations\FloatContractTests.java
 C:\dev\java\Fluente\src\test\java\validations\DateContractTests.java
+C:\dev\java\Fluente\src\test\java\validations\LongContractTests.java
+C:\dev\java\Fluente\src\test\java\validations\UUIDContractTests.java
 C:\dev\java\Fluente\src\test\java\validations\DecimalContractTests.java
 C:\dev\java\Fluente\src\test\java\validations\StringContractTests.java

@@ -3,6 +3,9 @@ validations\DateContractTests.class
 validations\FloatContractTests.class
 validations\StringContractTests.class
 notification\NotificationTest.class
+validations\LongContractTests.class
 validations\DoubleContractTests.class
 validations\DecimalContractTests.class
 validations\BooleanContractTests.class
+validations\UUIDContractTests.class
+validations\IntegerContractTests.class
