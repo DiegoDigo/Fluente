@@ -82,13 +82,14 @@ public class DateContractTests {
     @DisplayName("Testando se a data esta fora do periodo")
     public void isBetween() {
 
+        Date dataToday = DateUtils.setDate(2020, Calendar.OCTOBER, 15);
         Date dateFrom = DateUtils.setDate(2020, Calendar.OCTOBER, 16);
         Date dateTo = DateUtils.setDate(2020, Calendar.OCTOBER, 20);
 
 
         Contract date = new Contract()
                 .required()
-                .isBetween(new Date(),dateFrom, dateTo, "string", "string is null");
+                .isBetween(dataToday,dateFrom, dateTo, "string", "string is null");
 
         Assertions.assertTrue(date.inValid());
         Assertions.assertEquals(1, date.getNotifications().size());
