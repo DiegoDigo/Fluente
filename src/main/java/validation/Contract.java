@@ -18,7 +18,7 @@ public class Contract extends Notifiable {
     /* String validation */
 
     public Contract isNotNullOrEmpty(String value, String property, String message) {
-        if (StringUtils.isEmpty(value)) {
+        if (!StringUtils.isEmpty(value)) {
             addNotification(property, message);
         }
         return this;
@@ -32,7 +32,7 @@ public class Contract extends Notifiable {
     }
 
     public Contract isNullOrEmpty(String value, String property, String message) {
-        if (!StringUtils.isEmpty(value)) {
+        if (StringUtils.isEmpty(value)) {
             addNotification(property, message);
         }
         return this;

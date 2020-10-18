@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: validations.DecimalContractTests
 -------------------------------------------------------------------------------
-Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in validations.DecimalContractTests
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in validations.DecimalContractTests

@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
-    <property name="sun.java.command" value="C:\Users\di3g0\AppData\Local\Temp\surefire6368530373758115173\surefirebooter8339227647784982078.jar C:\Users\di3g0\AppData\Local\Temp\surefire6368530373758115173 2020-10-17T13-52-04_282-jvmRun1 surefire5065204353238931079tmp surefire_01676900346415234417tmp"/>
+    <property name="sun.java.command" value="C:\Users\di3g0\AppData\Local\Temp\surefire17581049628826522953\surefirebooter8263983458345378532.jar C:\Users\di3g0\AppData\Local\Temp\surefire17581049628826522953 2020-10-17T14-41-10_570-jvmRun1 surefire11774711134173241229tmp surefire_01643669257692707561tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\dev\java\Fluente\target\test-classes;C:\dev\java\Fluente\target\classes;C:\Users\di3g0\.m2\repository\org\projectlombok\lombok\1.18.14\lombok-1.18.14.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.1\junit-jupiter-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.1\junit-jupiter-api-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\di3g0\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\di3g0\.m2\repository\org\junit\platform\junit-platform-commons\1.6.1\junit-platform-commons-1.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.1\junit-jupiter-params-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.1\junit-jupiter-engine-5.6.1.jar;C:\Users\di3g0\.m2\repository\org\junit\platform\junit-platform-engine\1.6.1\junit-platform-engine-1.6.1.jar;C:\Users\di3g0\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\di3g0\AppData\Local\Temp\surefire6368530373758115173\surefirebooter8339227647784982078.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\di3g0\AppData\Local\Temp\surefire17581049628826522953\surefirebooter8263983458345378532.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.8+10-LTS"/>
@@ -47,14 +47,13 @@
     <property name="localRepository" value="C:\Users\di3g0\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\di3g0\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2020.2.3"/>
     <property name="java.version" value="11.0.8"/>
     <property name="user.dir" value="C:\dev\java\Fluente"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%JAVA_HOME%\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;%MAVEN_HOME%\bin;C:\Users\di3g0\AppData\Local\Microsoft\WindowsApps;;C:\Users\di3g0\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\di3g0\.dotnet\tools;C:\Users\di3g0\AppData\Roaming\npm;C:\Users\di3g0\AppData\Local\Yarn\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\di3g0\AppData\Local\Microsoft\WindowsApps;C:\Users\di3g0\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\di3g0\.dotnet\tools;C:\Users\di3g0\AppData\Roaming\npm;C:\Users\di3g0\AppData\Local\Yarn\bin;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
