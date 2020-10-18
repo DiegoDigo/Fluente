@@ -64,7 +64,7 @@ public class NotificationTest extends Notifiable {
                 new Contract()
                         .required()
                         .isEmail("teste@.com", "email", "teste")
-                        .isNotNullOrEmpty("", "nome", "teste")
+                        .isNullOrEmpty("", "nome", "teste")
         );
         Assertions.assertTrue(inValid());
         Assertions.assertEquals(2, getNotifications().size());

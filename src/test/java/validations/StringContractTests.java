@@ -12,7 +12,7 @@ public class StringContractTests {
     public void isNotNullOrEmpty() {
         Contract nullOrEmpty = new Contract()
                 .required()
-                .isNotNullOrEmpty(null, "string", "string is null");
+                .isNotNullOrEmpty("teste", "string", "string is null");
 
         Assertions.assertTrue(nullOrEmpty.inValid());
         Assertions.assertEquals(1, nullOrEmpty.getNotifications().size());
@@ -54,7 +54,7 @@ public class StringContractTests {
     public void isNullOrEmpty() {
         Contract email = new Contract()
                 .required()
-                .isNullOrEmpty("valor", "teste", "valor deve ser vazio");
+                .isNullOrEmpty(null, "teste", "valor deve ser vazio");
         Assertions.assertTrue(email.inValid());
         Assertions.assertEquals(1, email.getNotifications().size());
     }
